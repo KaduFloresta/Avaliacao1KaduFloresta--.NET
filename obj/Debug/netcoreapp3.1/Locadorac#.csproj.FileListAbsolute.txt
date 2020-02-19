@@ -1,0 +1,11 @@
+C:\Users\carlos.floresta.ALUNOS\Desktop\Locadorac#\obj\Debug\netcoreapp3.1\Locadorac#.csprojAssemblyReference.cache
+C:\Users\carlos.floresta.ALUNOS\Desktop\Locadorac#\obj\Debug\netcoreapp3.1\Locadorac#.AssemblyInfoInputs.cache
+C:\Users\carlos.floresta.ALUNOS\Desktop\Locadorac#\obj\Debug\netcoreapp3.1\Locadorac#.AssemblyInfo.cs
+C:\Users\carlos.floresta.ALUNOS\Desktop\Locadorac#\bin\Debug\netcoreapp3.1\Locadorac#.exe
+C:\Users\carlos.floresta.ALUNOS\Desktop\Locadorac#\bin\Debug\netcoreapp3.1\Locadorac#.deps.json
+C:\Users\carlos.floresta.ALUNOS\Desktop\Locadorac#\bin\Debug\netcoreapp3.1\Locadorac#.runtimeconfig.json
+C:\Users\carlos.floresta.ALUNOS\Desktop\Locadorac#\bin\Debug\netcoreapp3.1\Locadorac#.runtimeconfig.dev.json
+C:\Users\carlos.floresta.ALUNOS\Desktop\Locadorac#\bin\Debug\netcoreapp3.1\Locadorac#.dll
+C:\Users\carlos.floresta.ALUNOS\Desktop\Locadorac#\bin\Debug\netcoreapp3.1\Locadorac#.pdb
+C:\Users\carlos.floresta.ALUNOS\Desktop\Locadorac#\obj\Debug\netcoreapp3.1\Locadorac#.dll
+C:\Users\carlos.floresta.ALUNOS\Desktop\Locadorac#\obj\Debug\netcoreapp3.1\Locadorac#.pdb

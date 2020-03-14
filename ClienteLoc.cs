@@ -1,53 +1,49 @@
 using System;
-using NameLocacao;
-using NameFilme;
+using Locacaos;
+using Filmes;
 using System.Collections.Generic;
 
-namespace NameClienteLoc {
+namespace Clientes {
 
-public class ClienteLoc {
-	// Atributos
+public class Cliente {
+
 	public int idCliente;
 	public String nome;
-	public String dataNasc;
+	public String dataNascimento;
 	public String cpf;
-	public int diaDev;
-	public int filmesLoc;
+	public int diaDevolucao;
+	public int filmesLocacao;
 	public List<Locacao> locacoes = new List<Locacao>();
 
-	// Construtor
-	public ClienteLoc(int idCliente, String nome, String dataNasc, String cpf, int diaDev) {
-		// Atributos
+	public Cliente(int idCliente, String nome, String dataNascimento, String cpf, int diaDevolucao) {
+		
 		this.idCliente = idCliente;
 		this.nome = nome;
-		this.dataNasc = dataNasc;
+		this.dataNascimento = dataNascimento;
 		this.cpf = cpf;
-		this.diaDev = diaDev;
-		this.filmesLoc = 0;
+		this.diaDevolucao = diaDevolucao;
+		this.filmesLocacao = 0;
 	}
 
-	// Método com a Quantidade de Filmes locados
-	public int QtdeFimesLocCliente(int filmesLoc) {
-		return this.filmesLoc = filmesLoc;
+	public int atribuirFilmesLocados(int filmesLocacao) {
+		return this.filmesLocacao = filmesLocacao;
 	}
 
-	// Impressão Dados do CLiente
 	public void mostrarCliente() {
 		Console.WriteLine($"----------------CLIENTE----------------");
 		Console.WriteLine($"--> Nº ID DO CLIENTE: " + idCliente);
 		Console.WriteLine($"-> NOME COMPLETO: " + nome);
-		Console.WriteLine($"-> DATA DE NASCIMENTO: " + dataNasc);
+		Console.WriteLine($"-> DATA DE NASCIMENTO: " + dataNascimento);
 		Console.WriteLine($"-> CPF: " + cpf);
-		Console.WriteLine($"-> DIAS P/ DEVOLUÇÃO: " + diaDev);
-		Console.WriteLine($"-> QTDE DE LOCAÇÕES: " + filmesLoc);
+		Console.WriteLine($"-> DIAS P/ DEVOLUÇÃO: " + diaDevolucao);
+		Console.WriteLine($"-> QTDE DE LOCAÇÕES: " + filmesLocacao);
 		Console.WriteLine($"----------------------------------------");
 	}
-	// Adição de Locações
+	
 	public void adicionarLocacao(Locacao locacao) {
 		this.locacoes.Add(locacao);
 	}
 
-	// Lista de locações
 	public int getLocacoes() {
 		int qtd = 0;
 

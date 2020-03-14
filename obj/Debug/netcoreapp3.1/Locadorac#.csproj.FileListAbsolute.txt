@@ -9,3 +9,14 @@ C:\Users\carlos.floresta.ALUNOS\Desktop\Locadorac#\bin\Debug\netcoreapp3.1\Locad
 C:\Users\carlos.floresta.ALUNOS\Desktop\Locadorac#\bin\Debug\netcoreapp3.1\Locadorac#.pdb
 C:\Users\carlos.floresta.ALUNOS\Desktop\Locadorac#\obj\Debug\netcoreapp3.1\Locadorac#.dll
 C:\Users\carlos.floresta.ALUNOS\Desktop\Locadorac#\obj\Debug\netcoreapp3.1\Locadorac#.pdb
+C:\GitHub\Avaliacao1KaduFloresta-CSharp\bin\Debug\netcoreapp3.1\Locadorac#.exe
+C:\GitHub\Avaliacao1KaduFloresta-CSharp\bin\Debug\netcoreapp3.1\Locadorac#.deps.json
+C:\GitHub\Avaliacao1KaduFloresta-CSharp\bin\Debug\netcoreapp3.1\Locadorac#.runtimeconfig.json
+C:\GitHub\Avaliacao1KaduFloresta-CSharp\bin\Debug\netcoreapp3.1\Locadorac#.runtimeconfig.dev.json
+C:\GitHub\Avaliacao1KaduFloresta-CSharp\bin\Debug\netcoreapp3.1\Locadorac#.dll
+C:\GitHub\Avaliacao1KaduFloresta-CSharp\bin\Debug\netcoreapp3.1\Locadorac#.pdb
+C:\GitHub\Avaliacao1KaduFloresta-CSharp\obj\Debug\netcoreapp3.1\Locadorac#.csprojAssemblyReference.cache
+C:\GitHub\Avaliacao1KaduFloresta-CSharp\obj\Debug\netcoreapp3.1\Locadorac#.AssemblyInfoInputs.cache
+C:\GitHub\Avaliacao1KaduFloresta-CSharp\obj\Debug\netcoreapp3.1\Locadorac#.AssemblyInfo.cs
+C:\GitHub\Avaliacao1KaduFloresta-CSharp\obj\Debug\netcoreapp3.1\Locadorac#.dll
+C:\GitHub\Avaliacao1KaduFloresta-CSharp\obj\Debug\netcoreapp3.1\Locadorac#.pdb

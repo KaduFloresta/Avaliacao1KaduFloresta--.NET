@@ -1,26 +1,23 @@
 using System;
-using NameLocacao;
-using NameFilme;
-using NameClienteLoc;
+using Locacaos;
+using Filmes;
+using Clientes;
 
 namespace AvaliacaoLocadora
 {
 public class Principal {
 
 	public static void Main(String[] args) {
-        //Entrada IdCliente no switch
 	
 
 		Console.WriteLine("LOCADORA - Kadu Floresta");
 
-		// Lista com 5 Clientes
-		ClienteLoc cliente1 = new ClienteLoc(1, "Adriano Medeiros Sá", "21/01/1978", "123.123.123-12", 3);
-		ClienteLoc cliente2 = new ClienteLoc(2, "João Pedro Silva", "13/08/1945", "456.456.456-45", 2);
-		ClienteLoc cliente3 = new ClienteLoc(3, "Maria de Fátima Antunes", "02/12/2001", "789.789.789-78", 3);
-		ClienteLoc cliente4 = new ClienteLoc(4, "Letícia Eugenia Soares", "11/02/1988", "098.098.098-09", 2);
-		ClienteLoc cliente5 = new ClienteLoc(5, "Belmiro Schmmitt", "15/07/1995", "753.753.753-75", 3);
+		Cliente cliente1 = new Cliente(1, "Adriano Medeiros Sá", "21/01/1978", "123.123.123-12", 3);
+		Cliente cliente2 = new Cliente(2, "João Pedro Silva", "13/08/1945", "456.456.456-45", 2);
+		Cliente cliente3 = new Cliente(3, "Maria de Fátima Antunes", "02/12/2001", "789.789.789-78", 3);
+		Cliente cliente4 = new Cliente(4, "Letícia Eugenia Soares", "11/02/1988", "098.098.098-09", 2);
+		Cliente cliente5 = new Cliente(5, "Belmiro Schmmitt", "15/07/1995", "753.753.753-75", 3);
 
-		// Lista com 10 Filmes
 		Filme filme1 = new Filme(1, "Ben Hur", "25/01/1958",
 				"Ben-Hur é um mercador judeu que, após um desentendimento, é condenado a viver como escravo por um amigo de juventude,\n   Messala, que é o chefe das legiões romanas da cidade. Mas uma surpreendente oportunidade de vingança surge de onde ele menos espera.",
 				4.5, 5);
@@ -52,7 +49,6 @@ public class Principal {
 				"Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e entes queridos.\n   Com Tony Stark vagando perdido no espaço sem água e comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.",
 				4.5, 8);
 
-		// IdCliente / Menu
 		int idCliente = 0;
 		Locacao locacao;
 		do {
@@ -61,28 +57,28 @@ public class Principal {
 			idCliente = Convert.ToInt32(entrada);
 			switch (idCliente) {
 			case 1:
-				cliente1.mostrarCliente(); // Impressão CLIENTE "1"
-				locacao = new Locacao(01, cliente1); // Nova locações
-				filme1.mostrarFilme(); // Impressão dos Filmes
-				filme6.mostrarFilme(); //          "
-				filme10.mostrarFilme();//          "
-				locacao.AdicFilme(filme1); // Adicionando Filme
-				locacao.AdicFilme(filme6); //       "
-				locacao.AdicFilme(filme10);//       "
+				cliente1.mostrarCliente(); 
+				locacao = new Locacao(01, cliente1); 
+				filme1.mostrarFilme();
+				filme6.mostrarFilme();
+				filme10.mostrarFilme();
+				locacao.AdicionarFilme(filme1);
+				locacao.AdicionarFilme(filme6); 
+				locacao.AdicionarFilme(filme10);
 				Console.WriteLine("-> PREÇO TOTAL DAS LOCAÇÕES: R$ " + locacao.PrecoTotal());
-				Console.WriteLine("-> DATA DE DEVOLUÇÃO: " + locacao.calculoData());
-				Console.WriteLine("-> QTDE TOTAL DE FILMES LOCADOS: " + locacao.QtdeFilmesLoc());
+				Console.WriteLine("-> DATA DE DEVOLUÇÃO: " + locacao.calcularDataDevolucao());
+				Console.WriteLine("-> QTDE TOTAL DE FILMES LOCADOS: " + locacao.QtdeFilmesLocados());
 				break;
 			case 2:
 				cliente2.mostrarCliente();
 				locacao = new Locacao(02, cliente2);
 				filme2.mostrarFilme();
 				filme7.mostrarFilme();
-				locacao.AdicFilme(filme2);
-				locacao.AdicFilme(filme7);
+				locacao.AdicionarFilme(filme2);
+				locacao.AdicionarFilme(filme7);
 				Console.WriteLine("-> PREÇO TOTAL DAS LOCAÇÕES: R$ " + locacao.PrecoTotal());
-				Console.WriteLine("-> DATA DE DEVOLUÇÃO: " + locacao.calculoData());
-				Console.WriteLine("-> QTDE TOTAL DE FILMES LOCADOS: " + locacao.QtdeFilmesLoc());
+				Console.WriteLine("-> DATA DE DEVOLUÇÃO: " + locacao.calcularDataDevolucao());
+				Console.WriteLine("-> QTDE TOTAL DE FILMES LOCADOS: " + locacao.QtdeFilmesLocados());
 				break;
 			case 3:
 				cliente3.mostrarCliente();
@@ -91,24 +87,24 @@ public class Principal {
 				filme6.mostrarFilme();
 				filme7.mostrarFilme();
 				filme8.mostrarFilme();
-				locacao.AdicFilme(filme3);
-				locacao.AdicFilme(filme6);
-				locacao.AdicFilme(filme7);
-				locacao.AdicFilme(filme8);
+				locacao.AdicionarFilme(filme3);
+				locacao.AdicionarFilme(filme6);
+				locacao.AdicionarFilme(filme7);
+				locacao.AdicionarFilme(filme8);
 				Console.WriteLine("-> PREÇO TOTAL DAS LOCAÇÕES: R$ " + locacao.PrecoTotal());
-				Console.WriteLine("-> DATA DE DEVOLUÇÃO: " + locacao.calculoData());
-				Console.WriteLine("-> QTDE TOTAL DE FILMES LOCADOS: " + locacao.QtdeFilmesLoc());
+				Console.WriteLine("-> DATA DE DEVOLUÇÃO: " + locacao.calcularDataDevolucao());
+				Console.WriteLine("-> QTDE TOTAL DE FILMES LOCADOS: " + locacao.QtdeFilmesLocados());
 				break;
 			case 4:
 				cliente4.mostrarCliente();
 				locacao = new Locacao(04, cliente1);
 				filme4.mostrarFilme();
 				filme9.mostrarFilme();
-				locacao.AdicFilme(filme4);
-				locacao.AdicFilme(filme9);
+				locacao.AdicionarFilme(filme4);
+				locacao.AdicionarFilme(filme9);
 				Console.WriteLine("-> PREÇO TOTAL DAS LOCAÇÕES: R$ " + locacao.PrecoTotal());
-				Console.WriteLine("-> DATA DE DEVOLUÇÃO: " + locacao.calculoData());
-				Console.WriteLine("-> QTDE TOTAL DE FILMES LOCADOS: " + locacao.QtdeFilmesLoc());
+				Console.WriteLine("-> DATA DE DEVOLUÇÃO: " + locacao.calcularDataDevolucao());
+				Console.WriteLine("-> QTDE TOTAL DE FILMES LOCADOS: " + locacao.QtdeFilmesLocados());
 				break;
 			case 5:
 				cliente5.mostrarCliente();
@@ -116,12 +112,12 @@ public class Principal {
 				filme1.mostrarFilme();
 				filme5.mostrarFilme();
 				filme10.mostrarFilme();
-				locacao.AdicFilme(filme1);
-				locacao.AdicFilme(filme5);
-				locacao.AdicFilme(filme10);
+				locacao.AdicionarFilme(filme1);
+				locacao.AdicionarFilme(filme5);
+				locacao.AdicionarFilme(filme10);
 				Console.WriteLine("-> PREÇO TOTAL DAS LOCAÇÕES: R$ " + locacao.PrecoTotal());
-				Console.WriteLine("-> DATA DE DEVOLUÇÃO: " + locacao.calculoData());
-				Console.WriteLine("-> QTDE TOTAL DE FILMES LOCADOS: " + locacao.QtdeFilmesLoc());
+				Console.WriteLine("-> DATA DE DEVOLUÇÃO: " + locacao.calcularDataDevolucao());
+				Console.WriteLine("-> QTDE TOTAL DE FILMES LOCADOS: " + locacao.QtdeFilmesLocados());
 				break;
 			}
 		} while (idCliente <= 5);

@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\carlos.floresta.ALUNOS\\.nuget\\packages\\": {}
+    "C:\\Users\\aliss\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\carlos.floresta.ALUNOS\\Desktop\\GitHub Kadu 2020\\Avaliacao1KaduFloresta--.NET\\Locadorac#.csproj",
+      "projectUniqueName": "C:\\GitHub\\Avaliacao1KaduFloresta-CSharp\\Locadorac#.csproj",
       "projectName": "Locadorac#",
-      "projectPath": "c:\\Users\\carlos.floresta.ALUNOS\\Desktop\\GitHub Kadu 2020\\Avaliacao1KaduFloresta--.NET\\Locadorac#.csproj",
-      "packagesPath": "C:\\Users\\carlos.floresta.ALUNOS\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\carlos.floresta.ALUNOS\\Desktop\\GitHub Kadu 2020\\Avaliacao1KaduFloresta--.NET\\obj\\",
+      "projectPath": "C:\\GitHub\\Avaliacao1KaduFloresta-CSharp\\Locadorac#.csproj",
+      "packagesPath": "C:\\Users\\aliss\\.nuget\\packages\\",
+      "outputPath": "C:\\GitHub\\Avaliacao1KaduFloresta-CSharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\carlos.floresta.ALUNOS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\aliss\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

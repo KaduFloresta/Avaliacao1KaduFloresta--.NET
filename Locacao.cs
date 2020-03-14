@@ -1,55 +1,46 @@
 using System;
-using NameFilme;
-using NameClienteLoc;
+using Filmes;
+using Clientes;
 using System.Collections.Generic;
-using System.Globalization;
-using System.Reflection;
 
 
-namespace NameLocacao {
+namespace Locacaos {
 
 public class Locacao {
-	// Atributos
-	public int idLoc = 0;
-	public ClienteLoc cliente;
-	public String dataLoc;
+	public int idLocacao = 0;
+	public Cliente cliente;
+	public String dataLocacao;
 	public String dataDevolucao;
 	public Double valorTotal;
 
 	public List<Filme> filmes = new List<Filme>();
-	// Construtor
-	public Locacao(int idLoc, ClienteLoc cliente) {
 
-		this.idLoc = idLoc;
+	public Locacao(int idLocacao, Cliente cliente) {
+
+		this.idLocacao = idLocacao;
 		this.cliente = cliente;
 
 		this.cliente.adicionarLocacao(this);
 	}
-
-	// Adição de Filmes
-	public void AdicFilme(Filme filme) {
+	public void AdicionarFilme(Filme filme) {
 		this.filmes.Add(filme);
 	}
-
-	// Método com o Valor Total das Locações (Preço)
+	
 	public double PrecoTotal() {
 		double total = 0;
 		foreach (Filme filme in filmes) {
-			total += filme.valorLoc;
+			total += filme.valorLocacao;
 		}
 		return total;
 	}
-
-	// Método com a Quantidade de Filmes Locados
-	public int QtdeFilmesLoc() {
+	public int QtdeFilmesLocados() {
 		return this.filmes.Count;
 	}
 
-	// Calculo Data de Devolução
-	public String calculoData() {
+	public String calcularDataDevolucao() {
 		DateTime dataAtual = DateTime.Now;
 
-		return dataAtual.AddDays(cliente.diaDev).ToString("dddd, dd MMMM yyyy");
+		return dataAtual.AddDays(cliente.diaDevolucao).ToString("dddd, dd MMMM yyyy");
 	}
 }
 }

@@ -1,45 +1,40 @@
 using System;
 
-namespace NameFilme {
+namespace Filmes {
+    public class Filme {
+        public int idFilme;
+        public String titulo;
+        public String dataLancamento;
+        public String sinopse;
+        public Double valorLocacao;
+        public int qtdEstoque;
+        public int qtdLocados;
 
-public class Filme {
-    // Atributos
-    public int idFilme;
-    public String titulo;
-    public String dataLanc;
-    public String sinopse;
-    public Double valorLoc;
-    public int estoque;
-    public int locado;
+        public Filme(int idFilme, String titulo, String dataLancamento, String sinopse, Double valorLocacao, int qtdEstoque) {
+            this.idFilme = idFilme;
+            this.titulo = titulo;
+            this.dataLancamento = dataLancamento;
+            this.sinopse = sinopse;
+            this.valorLocacao = valorLocacao;
+            this.qtdEstoque = qtdEstoque;
+            this.qtdLocados = 0;
+        }
 
-    // Construtor
-    public Filme(int idFilme, String titulo, String dataLanc, String sinopse, Double valorLoc, int estoque) {
-        this.idFilme = idFilme;
-        this.titulo = titulo;
-        this.dataLanc = dataLanc;
-        this.sinopse = sinopse;
-        this.valorLoc = valorLoc;
-        this.estoque = estoque;
-        this.locado = 0;
+        public void atualizarEstoque() {
+            this.qtdEstoque -= 1;
+            this.qtdLocados += 1;
+        }
+
+        public void mostrarFilme() {
+            Console.WriteLine("----------------------------FILME----------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("--> Nº ID DO FILME: " + idFilme);
+            Console.WriteLine("-> TÍTULO: " + titulo);
+            Console.WriteLine("-> DATA DE LANÇAMENTO: " + dataLancamento);
+            Console.WriteLine("-> SINOPSE: " + sinopse);
+            Console.WriteLine("-> VALOR DA LOCAÇÃO: R$ " + valorLocacao);
+            Console.WriteLine("-> QTDE EM ESTOQUE: " + qtdEstoque);
+            Console.WriteLine("-> QTDE DE LOCAÇÕES REALIZADAS: " + qtdLocados);
+            Console.WriteLine("-------------------------------------------------------------------------------------------------------------------------------------------");
+        }
     }
-
-    // Método com a Quantidade de locações Realizadas
-    public void filmeLocado() {
-        this.estoque -= 1;
-        this.locado += 1;
-    }
-
-    // Impressão Dados do Filme
-    public void mostrarFilme() {
-        Console.WriteLine("----------------------------FILME----------------------------------------------------------------------------------------------------------");
-        Console.WriteLine("--> Nº ID DO FILME: " + idFilme);
-        Console.WriteLine("-> TÍTULO: " + titulo);
-        Console.WriteLine("-> DATA DE LANÇAMENTO: " + dataLanc);
-        Console.WriteLine("-> SINOPSE: " + sinopse);
-        Console.WriteLine("-> VALOR DA LOCAÇÃO: R$ " + valorLoc);
-        Console.WriteLine("-> QTDE EM ESTOQUE: " + estoque);
-        Console.WriteLine("-> QTDE DE LOCAÇÕES REALIZADAS: " + locado);
-        Console.WriteLine("-------------------------------------------------------------------------------------------------------------------------------------------");
-    }
-}
 }
